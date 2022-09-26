@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background-color:#9999998c;">
+
+  <h1 class="aa"> Card Example.. </h1>
+  
+  <table>
+    <thead>
+      <tr class="th">
+          <th> items </th>
+          <th> unit price </th>     
+          <th> unit price </th>
+          <th> unit price </th>
+          <th> calculate </th>
+          <th> total </th>
+      </tr>
+    </thead>
+
+      <tbody>
+        <tr class="tr">
+                <td><input class="ta" type="text" name="pepsi" value="pepsi" style="color: rgb(82, 75, 177);"></td>
+                <td><input class="td" id="col1" type="number"></td>
+                <td><input class="td" id="col2" type="number"></td>
+                <td><input class="td" id="col3" type="number"></td>
+                <td> <button class="t" onclick="calculate()">Calculate</button> </td><br>
+                <td>  RESULT: <input class="td" id="result1"> </td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>    
+              <td> <input class="ta" type="text" name="chipsy" value="chipsy" style="color: rgb(82, 75, 177);"></td>
+              <td><input class="td" id="col4" type="number"></td>
+              <td><input class="td" id="col5" type="number"></td>
+              <td><input class="td" id="col6" type="number"></td>
+              <td> <button class="t" onclick="calculat()">Calculate</button> </td><br>
+              <td>  RESULT: <input class="td" id="result2"> </td>
+        </tr>
+      </tbody>
+  
+      <tbody>
+          <tr> 
+              <td> <input class="ta" type="text" name="sweets" value="sweets" style="color: rgb(82, 75, 177);"> </td>
+              <td><input class="td" id="col7" type="number"></td>
+              <td><input class="td" id="col8" type="number"></td>
+              <td><input class="td" id="col9" type="number"></td>
+              <td> <button class="t" onclick="calcula()">Calculate</button> </td><br>
+              <td>  RESULT: <input class="td" id="result3"> </td>
+          </tr>
+      </tbody>
+    
+      <tbody>
+        <tr>
+              <td> <input class="ta" type="text" name="pizza" value="pizza" style="color: rgb(82, 75, 177) ;"> </td>
+              <td><input class="td" id="col10" type="number"></td>
+              <td><input class="td" id="col11" type="number"></td>
+              <td><input class="td" id="col12" type="number"></td>
+              <td> <button class="t" onclick="calcul()">Calculate</button> </td><br>
+              <td>  RESULT: <input class="td" id="result4"> </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <script>
+    function calculate() {
+  var my1 = document.getElementById('col1').value;
+  var my2 = document.getElementById('col2').value;
+  var my3 = document.getElementById('col3').value;
+  var result = document.getElementById('result1');
+  var myResult = parseInt(my1) + parseInt(my2) + parseInt(my3); 
+  result.value = myResult;}
+
+  function calculat() { 
+  var my1 = document.getElementById('col4').value;
+  var my2 = document.getElementById('col5').value;
+  var my3 = document.getElementById('col6').value;
+  var result = document.getElementById('result2');
+  var myResult = parseInt(my1) + parseInt(my2) + parseInt(my3); 
+  result.value = myResult;}
+
+  function calcula() {
+  var my1 = document.getElementById('col7').value;
+  var my2 = document.getElementById('col8').value;
+  var my3 = document.getElementById('col9').value;
+  var result = document.getElementById('result3');
+  var myResult = parseInt(my1) + parseInt(my2) + parseInt(my3); 
+  result.value = myResult;}
+
+  function calcul() {
+  var my1 = document.getElementById('col10').value;
+  var my2 = document.getElementById('col11').value;
+  var my3 = document.getElementById('col12').value;
+  var result = document.getElementById('result4');
+  var myResult = parseInt(my1) + parseInt(my2)  + parseInt(my3); 
+  result.value = myResult;}
+</script>
+
+
+</body>
+</html>
